@@ -4,7 +4,9 @@
   "description": "好吧，就是个个人主页",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config build/webpack.client.config.js",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --config build/webpack.client.config.js"
   },
   "repository": {
     "type": "git",
@@ -24,7 +26,8 @@
     "react-dom": "^16.3.2",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
-    "webpack": "^3.11.0"
+    "webpack": "^3.11.0",
+    "react-hot-loader": "^3.1.3"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
@@ -47,7 +50,6 @@
     "eslint-plugin-react": "^7.8.2",
     "eslint-plugin-standard": "^3.1.0",
     "html-webpack-plugin": "^3.2.0",
-    "react-hot-loader": "^3.1.3",
     "rimraf": "^2.6.2",
     "webpack-dev-server": "^2.11.0"
   }
