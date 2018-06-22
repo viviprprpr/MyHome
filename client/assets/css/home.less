@@ -1,0 +1,146 @@
+// fd7f46
+html,body,#root{height: 100%}
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div{margin:0;padding:0;border:0;}
+body{background:#fff;color:#333;font-size:12px; font-family:"SimSun","宋体","Arial Narrow";}
+
+ul,ol{list-style-type:none;}
+select,input,img,select{vertical-align:middle;}
+
+a{text-decoration:none;}
+a:link{color:#009;}
+a:visited{color:#800080;}
+a:hover,a:active,a:focus{color:#c00;text-decoration:underline;}
+
+@font-face {
+  font-family: SFUIDisplay;
+  src: url('../fonts/SF-UI-Display-Semibold.otf');
+}
+@font-face {
+  font-family: CenturyGothic;
+  src: url('../fonts/Century\ Gothic.ttf');
+}
+
+body{
+  color: #3B3A3F;
+  font-family: 'Source Han Sans CN';
+}
+header{
+  display: block;
+  min-height: 600px;
+  height: 100%;
+  background-image: url('../images/home-maxbg.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.shadow-box{
+  display: block;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  padding: 0 100px;
+}
+.header-nav{
+  font-size: 20px;
+  color: #ffffff;
+  font-family: CenturyGothic;
+  display: flex;
+  align-items: center;
+  height: 14%;
+  line-height: 14%;
+}
+.header-logo{
+  height: 40px;
+  width: 40px;
+}
+.header-nav span{
+  margin-left: 80px;
+}
+.header-nav span:hover{
+  color: #fd7f46;
+  cursor: pointer;
+}
+.header-title{
+  font-family: SFUIDisplay;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 100px;
+}
+.title-level-one{
+  font-size: 700%;
+  color: #ffffff;
+}
+.title-level-two{
+  font-size: 300%;
+  color: #ffffff;
+}
+.header-description{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.description-style{
+  font-size: 25px;
+  font-family: 'Source Han Sans CN';
+  color: #ffffff;
+  width: 600px;
+  text-align: justify;
+}
+.header-date{
+  font-family: 'Microsoft Yahei';
+  font-size: 16px;
+  font-weight: 200;
+  color: #ffffff;
+}
+
+@media screen and ( min-width: 1400px ) {
+  .shadow-box{
+    padding: 0;
+  }
+  .header-nav,.header-title,.header-description{
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .header-title{
+    padding-right: 100px;
+  }
+}
+
+.dota-competition{
+  padding: 0 100px;
+  margin-top: -5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.competition-img{
+  width: 70%;
+  max-width: 840px;
+}
+.competition-description{
+  line-height: 25px;
+  width: 25%;
+  max-width: 300px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.competition-all{
+  color: #fd7f46;
+  font-family: CenturyGothic;
+}
+.competition-all{
+  display: block;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  width: 80px;
+  border-bottom: 2px solid #fd7f46;
+}
+
+@media screen and ( min-width: 1400px ) {
+  .dota-competition{
+    padding: 0;
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: -5%;
+  }
+}

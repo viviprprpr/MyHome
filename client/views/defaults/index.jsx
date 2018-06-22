@@ -1,13 +1,12 @@
 import React from 'react'
-import Routers from '../router'
 
-export default class App extends React.Component {
+export default class Default extends React.Component {
   componentDidMount() {
     // do
   }
   render() {
     return [
-      <Routers />,
+      <div>222</div>,
     ]
   }
 }

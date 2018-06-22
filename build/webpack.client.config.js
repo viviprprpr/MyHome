@@ -14,7 +14,10 @@ const config = {
     publicPath: '/public/'
   },
   resolve: {
-    extensions: ['.js', '.jsx']
+    extensions: ['.js', '.jsx'],
+    alias: {
+      css: require('path').resolve(__dirname, '../client/assets/css')
+    }
   },
   module: {
     rules: [
@@ -36,6 +39,22 @@ const config = {
         exclude: [
           path.join(__dirname, '../node_modules')
         ]
+      },
+      {
+        test: /\.less?$/,
+        use: [{
+          loader: 'style-loader'
+        },
+        {
+          loader: 'css-loader'
+        },
+        {
+          loader: 'less-loader'
+        }]
+      },
+      {
+        test: /\.(gif|jpg|jpeg|png|woff|svg|eot|ttf|otf)$/,
+        loader: 'url-loader?limit=2048'
       }
     ]
   },
